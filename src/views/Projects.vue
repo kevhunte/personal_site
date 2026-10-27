@@ -2,10 +2,10 @@
   <div class="page">
     <div id="projectsContainer" class="containers">
       <h2 class="resHeaders">Personal Projects</h2>
-      <div v-if="this.projects" class="animated fadeIn projects">
+      <div v-if="projects.length" class="animated fadeIn projects">
         <div
           :key="idx"
-          v-for="(p, idx) in this.projects"
+          v-for="(p, idx) in projects"
           class="titles project"
         >
           <h3>{{ p.Text }}</h3>
@@ -20,7 +20,7 @@
           </ul>
         </div>
       </div>
-      <div v-else-if="!this.projects" class="animated fadeIn projects">
+      <div v-else class="animated fadeIn projects">
         <p>
           View my projects at the GitHub repository located
           <a href="https://github.com/kevhunte" target="_blank" rel="noopener"
@@ -33,33 +33,13 @@
 </template>
 
 <script>
-import projectsURL from "../endpoints";
+import projects from "../data/projects.json";
 export default {
   name: "Projects",
   data() {
     return {
-      projects: [],
+      projects,
     };
-  },
-  beforeMount() {
-    this.getProjects();
-  },
-  methods: {
-    async getProjects() {
-      const url = projectsURL;
-      try {
-        if (sessionStorage.getItem("projects")) {
-          this.projects = JSON.parse(sessionStorage.getItem("projects"));
-        } else {
-          const response = await fetch(url);
-          const data = await response.json();
-          sessionStorage.setItem("projects", JSON.stringify(data.body));
-          this.projects = data.body;
-        }
-      } catch (e) {
-        //console.error(`Error calling projects endpoint: \n${e}`);
-      }
-    },
   },
 };
 </script>

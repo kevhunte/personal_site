@@ -11,7 +11,7 @@
         </h5>
         <ul>
           <li>
-            Designed, built and maintained systems for managing copyrighted content on Meta's platforms
+            Designed, built and maintained systems for managing copyrighted content
           </li>
         </ul>
       </div>

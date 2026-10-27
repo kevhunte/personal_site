@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "Text": "The Cookbook",
+    "Blurb": "A social recipe management platform.",
+    "URL": "",
+    "hosted": "https://thecookbook.up.railway.app"
+  },
+  {
+    "id": 1,
+    "Text": "Scheduling Visualizer",
+    "Blurb": "A visualization tool for simulating different Operating System scheduling algorithms.",
+    "URL": "https://github.com/kevhunte/SchedulingVisualizer",
+    "hosted": "https://d6ac4pjh2mkml.cloudfront.net/"
+  },
+  {
+    "id": 2,
+    "Text": "FoodScanningApp",
+    "Blurb": "A food scanning application built with React Native and Express.",
+    "URL": "https://github.com/kevhunte/FoodScanningApp",
+    "hosted": ""
+  },
+  {
+    "id": 3,
+    "Text": "Monte Carlo Simulator",
+    "Blurb": "A Monte Carlo program made with React Hooks.",
+    "URL": "https://github.com/kevhunte/MonteCarlo",
+    "hosted": "https://themontecarlo.s3.amazonaws.com/index.html"
+  },
+  {
+    "id": 4,
+    "Text": "Hackerrank & LeetCode Solutions",
+    "Blurb": "Here lies my solutions to problems on Hackerrank and Leetcode",
+    "URL": "https://github.com/kevhunte/hackerrank_leetcode_solutions",
+    "hosted": ""
+  },
+  {
+    "id": 5,
+    "Text": "Computer Science, by Python",
+    "Blurb": "A repository of academic, algorithm-heavy CLI projects",
+    "URL": "https://github.com/kevhunte/Academic-Projects",
+    "hosted": ""
+  },
+  {
+    "id": 6,
+    "Text": "Virtual/Voice Assistant",
+    "Blurb": "A personal, customized Voice Assistant built with text-to-speech and speech-to-text libraries",
+    "URL": "https://github.com/kevhunte/VoiceAssistant",
+    "hosted": ""
+  }
+]
